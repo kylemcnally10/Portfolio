@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import darkSkyBackground from '../static/images/darkSky.jpg';
 import portrait from '../static/images/FullPortrait.jpg';
@@ -13,6 +13,10 @@ import leftArrow from '../static/images/leftArrow.png';
 import '../static/styles/Style.css';
 
 const About = (props) => {
+
+    useEffect(() => {
+        document.title = 'Kyle McNally | About';
+    }, []);
 
     const [isOpen, setIsOpen] = useState(false);
 

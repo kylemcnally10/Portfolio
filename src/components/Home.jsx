@@ -12,6 +12,8 @@ import '../static/styles/Style.css';
 
 const Home = () => {
     useEffect(() => {
+        document.title = 'Kyle McNally | Home';
+
         const showDescriptor = (tagId) => {
             const descriptor = document.getElementById(tagId);
             descriptor.style.display = 'inline-block';

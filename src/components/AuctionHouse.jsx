@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import darkSkyBackground from '../static/images/darkSky.jpg';
 import '../static/styles/Style.css';
 import kicon from '../static/images/k-key.png';
@@ -13,6 +13,11 @@ import { Link } from 'react-router-dom';
 
 
 const AuctionHouse = (props) => {
+
+    useEffect(() => {
+        document.title = 'Kyle McNally | Auction House';
+    }, []);
+
     const images = [
         {
             name: "Login/Registration",
